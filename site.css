@@ -175,9 +175,9 @@ h2 {
 .feature-card {
     display: flex;
     flex-direction: column;
-    min-height: 290px;
+    min-height: 0;
     overflow: hidden;
-    padding: 24px;
+    padding: 22px 24px;
     border: 1px solid var(--line);
     border-radius: 10px;
     background: #fff;
@@ -197,26 +197,21 @@ h2 {
     color: #c14b39;
 }
 
-.card-art {
-    display: block;
-    height: 110px;
-    margin: 12px 0 18px;
-    overflow: hidden;
-    border-radius: 7px;
-    background: #fff3e9;
-}
-
-.card-art svg {
-    width: 100%;
-    height: 100%;
+/* Ẩn toàn bộ hình minh họa trong card */
+.card-art,
+.mini-bars,
+.mini-explorer {
+    display: none !important;
 }
 
 .feature-card strong {
+    margin-top: 10px;
     font-size: 22px;
     letter-spacing: -.03em;
 }
 
-.feature-card>span:not(.card-art):not(.card-index):not(.card-action) {
+.feature-card>span:not(.card-index):not(.card-action) {
+    margin-top: 6px;
     color: var(--muted);
     font-size: 14px;
 }
@@ -227,83 +222,6 @@ h2 {
     color: #c14b39;
     font-size: 13px;
     font-weight: 700;
-}
-
-.card-brands .card-art {
-    background: #e9f8f4;
-}
-
-.card-charts .card-art {
-    background: #fceff1;
-}
-
-.card-explorer .card-art {
-    background: #edf0ff;
-}
-
-.mini-bars,
-.mini-explorer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 25px;
-}
-
-.mini-bars i,
-.mini-explorer i {
-    display: block;
-    height: 15px;
-    border-radius: 3px;
-    background: #20a789;
-}
-
-.mini-bars i:nth-child(1) {
-    width: 83%;
-}
-
-.mini-bars i:nth-child(2) {
-    width: 68%;
-    background: #fa794e;
-}
-
-.mini-bars i:nth-child(3) {
-    width: 55%;
-    background: #6669c6;
-}
-
-.mini-bars i:nth-child(4) {
-    width: 37%;
-    background: #dfb22e;
-}
-
-.mini-bars i:nth-child(5) {
-    width: 23%;
-    background: #e36891;
-}
-
-.mini-explorer i {
-    height: 16px;
-    background: #6369d4;
-}
-
-.mini-explorer i:nth-child(1) {
-    width: 90%;
-}
-
-.mini-explorer i:nth-child(2) {
-    width: 64%;
-    background: #fa7953;
-}
-
-.mini-explorer i:nth-child(3) {
-    width: 73%;
-    background: #1aa893;
-}
-
-.mini-explorer i:nth-child(4) {
-    width: 43%;
-    background: #e1af39;
 }
 
 .data-disclaimer {
@@ -337,7 +255,7 @@ footer {
     }
 
     .feature-card {
-        min-height: 315px;
+        min-height: 0;
     }
 }
 
