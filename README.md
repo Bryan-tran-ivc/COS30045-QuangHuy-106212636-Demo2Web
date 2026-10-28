@@ -1,9 +1,12 @@
-# COS30045 Visual Atlas
+# COS30045 - Data Visualisation
 
-A self-contained static website combining four exercises: SVG house, TV brand bars, three D3 charts, and an interactive TV explorer. The four source repositories under `../github-repositories/` remain unchanged.
+A website with exercises from Weeks 4 to 6.
 
-## Deploy to Mercury
+- [Exercise 4.1](exercise-4-1/) - SVG house and garden
+- [Exercises 4.3-4.6](exercise-4-3-4-6/) - Horizontal bar chart
+- [Exercise 5](exercise-5/) - Bar, line, scatter and donut charts
+- [Exercise 6](exercise-6/) - TV energy charts and filters
 
-Upload **the contents of this folder** to your Mercury web root, keeping `index.html`, `site.css`, and the `house/`, `brands/`, `charts/`, `explorer/` folders together. Open the uploaded `index.html` through the Mercury HTTP URL. No build step or backend is needed. If uploading this folder as a subfolder, open its `index.html` URL instead. D3 v7 loads from `https://d3js.org/d3.v7.min.js`, so viewers need access to that CDN.
+## AI declaration
 
-For local testing, run `python3 -m http.server 8000` from this folder and open `http://localhost:8000/`. Do not open the HTML with a `file://` URL: browsers block CSV fetches there. Each chart page reads its own relative `data/` folder. Values are practice data, not verified measurements.
+ChatGPT helped design and write parts of the website and code, prepare data, and check the charts.
